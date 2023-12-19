@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+	<body>
+		<div id="png">
+			<img src="pictures/Logo_NIKE(900x320).png" />
+		</div>
+		<div></div>
 
-</head>
-<body>
-  <div id="png">
-    <img src="pictures/Logo_NIKE(900x320).png">
-  </div>
-  <div>
-
-  </div>
-
-  <div id="svg">
-    <svg xmlns="http://www.w3.org/2000/svg"
-       width="900px" height="320px"
-       viewBox="0 0 1000 356">
-    <path id="Bezier"
-          fill="none" stroke="black" stroke-width="1"
-          d="M 144.44,1.00
+		<div id="svg">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="900px"
+				height="320px"
+				viewBox="0 0 1000 356"
+			>
+				<path
+					id="Bezier"
+					fill="none"
+					stroke="black"
+					stroke-width="1"
+					d="M 144.44,1.00
              C -13.33,154.67 0.39,251.17 0.39,251.17
                0.39,251.17 -7.50,352.50 118.22,355.78
                200.73,351.09 193.67,349.67 475.00,230.50
@@ -27,34 +33,38 @@
                996.00,7.50 337.82,181.45 270.33,199.33
                131.82,232.91 116.91,153.27 111.82,148.73
                104.55,121.45 105.27,102.18 116.18,62.55
-               121.64,43.73 133.27,19.91 144.44,1.00 Z" />
-    </svg>
-  </div>
+               121.64,43.73 133.27,19.91 144.44,1.00 Z"
+				/>
+			</svg>
+		</div>
 
-  <div id="bezier">
-    <canvas id="myCanvas" width="900" height="320"></canvas>
-    <script>
-      var canvas = document.getElementById('myCanvas');
-      var ctx = canvas.getContext('2d');
+		<div id="bezier">
+			<canvas
+				id="myCanvas"
+				width="900"
+				height="320"
+			></canvas>
+			<script>
+				var canvas = document.getElementById("myCanvas");
+				var ctx = canvas.getContext("2d");
 
-      ctx.scale(0.9,0.9);
-      ctx.beginPath();
-      ctx.moveTo(144.44,1);
-      ctx.bezierCurveTo(-13.33,154.67,0.39,251.17,0.39,251.17);
-      ctx.bezierCurveTo(0.39,251.17,-7.5,352.5,118.22,355.78);
-      ctx.bezierCurveTo(200.73,351.09,193.67,349.67,475,230.5);
-      ctx.bezierCurveTo(743.5,115.5,996,7.5,996,7.5);
-      ctx.bezierCurveTo(996,7.5,337.82,181.45,270.33,199.33);
-      ctx.bezierCurveTo(131.82,232.91,116.91,153.27,111.82,148.73);
-      ctx.bezierCurveTo(104.55,121.45,105.27,102.18,116.18,62.55);
-      ctx.bezierCurveTo(121.64,43.73,133.27,19.91,144.44,1);
-      ctx.lineWidth = 1;
+				ctx.scale(0.9, 0.9);
+				ctx.beginPath();
+				ctx.moveTo(144.44, 1);
+				ctx.bezierCurveTo(-13.33, 154.67, 0.39, 251.17, 0.39, 251.17);
+				ctx.bezierCurveTo(0.39, 251.17, -7.5, 352.5, 118.22, 355.78);
+				ctx.bezierCurveTo(200.73, 351.09, 193.67, 349.67, 475, 230.5);
+				ctx.bezierCurveTo(743.5, 115.5, 996, 7.5, 996, 7.5);
+				ctx.bezierCurveTo(996, 7.5, 337.82, 181.45, 270.33, 199.33);
+				ctx.bezierCurveTo(131.82, 232.91, 116.91, 153.27, 111.82, 148.73);
+				ctx.bezierCurveTo(104.55, 121.45, 105.27, 102.18, 116.18, 62.55);
+				ctx.bezierCurveTo(121.64, 43.73, 133.27, 19.91, 144.44, 1);
+				ctx.lineWidth = 1;
 
-      // line color
-      ctx.strokeStyle = 'black';
-      ctx.stroke();
-    </script>
-  </div>
-    
-</body>
+				// line color
+				ctx.strokeStyle = "black";
+				ctx.stroke();
+			</script>
+		</div>
+	</body>
 </html>
