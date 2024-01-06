@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>CodePen - Kontext</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+	</head>
+	<body>
+		<!-- partial:index.partial.html -->
+		<article class="kontext">
+			<div class="layer one show">
+				<h2>Layer One</h2>
+				<div id="png">
+					<img src="pictures/Logo_NIKE(900x320).png" />
+				</div>
+			</div>
+			<div class="layer two">
+				<h2>Layer Two</h2>
+				<div id="svg">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="900px"
+						height="320px"
+						viewBox="0 0 1000 356"
+					>
+						<path
+							id="Bezier"
+							fill="none"
+							stroke="black"
+							stroke-width="1"
+							d="M 144.44,1.00
+							C -13.33,154.67 0.39,251.17 0.39,251.17
+							0.39,251.17 -7.50,352.50 118.22,355.78
+							200.73,351.09 193.67,349.67 475.00,230.50
+							743.50,115.50 996.00,7.50 996.00,7.50
+							996.00,7.50 337.82,181.45 270.33,199.33
+							131.82,232.91 116.91,153.27 111.82,148.73
+							104.55,121.45 105.27,102.18 116.18,62.55
+							121.64,43.73 133.27,19.91 144.44,1.00 Z"
+						/>
+					</svg>
+				</div>
+			</div>
+			<div class="layer three">
+				<h2>Layer Three</h2>
+
+				<div id="bezier">
+					<canvas
+						id="myCanvas"
+						width="900"
+						height="320"
+					></canvas>
+					<script>
+						var canvas = document.getElementById("myCanvas");
+						var ctx = canvas.getContext("2d");
+
+						ctx.scale(0.9, 0.9);
+						ctx.beginPath();
+						ctx.moveTo(144.44, 1);
+						ctx.bezierCurveTo(-13.33, 154.67, 0.39, 251.17, 0.39, 251.17);
+						ctx.bezierCurveTo(0.39, 251.17, -7.5, 352.5, 118.22, 355.78);
+						ctx.bezierCurveTo(200.73, 351.09, 193.67, 349.67, 475, 230.5);
+						ctx.bezierCurveTo(743.5, 115.5, 996, 7.5, 996, 7.5);
+						ctx.bezierCurveTo(996, 7.5, 337.82, 181.45, 270.33, 199.33);
+						ctx.bezierCurveTo(131.82, 232.91, 116.91, 153.27, 111.82, 148.73);
+						ctx.bezierCurveTo(104.55, 121.45, 105.27, 102.18, 116.18, 62.55);
+						ctx.bezierCurveTo(121.64, 43.73, 133.27, 19.91, 144.44, 1);
+						ctx.lineWidth = 10;
+
+						// line color
+						ctx.strokeStyle = "black";
+						ctx.stroke();
+					</script>
+				</div>
+			</div>
+		</article>
+
+		<ul class="bullets"></ul>
+		<!-- partial -->
+		<script src="./script.js"></script>
+	</body>
+</html>
