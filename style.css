@@ -8,8 +8,8 @@
 	width: 900px;
 	height: 400px;
 	margin: 15px;
+	margin-bottom: 140px;
 	padding: 0px;
-	border: 2px solid black;
 	background-image: url("pictures/shoe.png");
 }
 #svg {
@@ -22,8 +22,8 @@
 	width: 900px;
 	height: 910px;
 	margin: 15px;
+	margin-bottom: 140px;
 	padding: 0px;
-	border: 2px solid black;
 	background-image: url("pictures/shirt.png");
 }
 #bezier {
@@ -36,8 +36,8 @@
 	width: 900px;
 	height: 1213px;
 	margin: 15px;
+	margin-bottom: 140px;
 	padding: 0px;
-	border: 2px solid black;
 	background-image: url("pictures/backpack.png");
 }
 .title {
@@ -47,9 +47,15 @@
 	font-size: 40px;
 }
 a {
+	margin-top: 60px;
 	margin-left: 30px;
 	color: beige;
+	font-family: "abrakadabra";
 }
 body {
 	background-image: url("pictures/snow.gif");
+}
+@font-face {
+	font-family: abrakadabra;
+	src: url("font/Futura_Std_Extra_Bold_Condensed.ttf");
 }
