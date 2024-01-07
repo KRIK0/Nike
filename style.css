@@ -48,4 +48,8 @@
 }
 a {
 	margin-left: 30px;
+	color: beige;
+}
+body {
+	background-image: url("pictures/snow.gif");
 }
