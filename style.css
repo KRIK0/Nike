@@ -1,16 +1,51 @@
-#svg,
-#png,
-#bezier{
-  float: left;
-  width: 900px;
-  height: 320px;
-  margin: 15px;
-  padding: 5px;
-  border: 2px solid black;
+#png {
+	margin-top: 140px;
+	margin-left: 360px;
 }
-#png{
-  margin-top: 0;
+.shoe {
+	margin-top: 0;
+	float: left;
+	width: 900px;
+	height: 400px;
+	margin: 15px;
+	padding: 0px;
+	border: 2px solid black;
+	background-image: url("pictures/shoe.png");
 }
-#bezier{
-  margin-bottom: 0;
+#svg {
+	margin-top: 200px;
+	margin-left: 280px;
+}
+.shirt {
+	margin-top: 0;
+	float: left;
+	width: 900px;
+	height: 910px;
+	margin: 15px;
+	padding: 0px;
+	border: 2px solid black;
+	background-image: url("pictures/shirt.png");
+}
+#bezier {
+	margin-top: 700px;
+	margin-left: 270px;
+}
+.backpack {
+	margin-top: 0;
+	float: left;
+	width: 900px;
+	height: 1213px;
+	margin: 15px;
+	padding: 0px;
+	border: 2px solid black;
+	background-image: url("pictures/backpack.png");
+}
+.title {
+	width: 900px;
+	margin-top: 60px;
+	margin-left: 25%;
+	font-size: 40px;
+}
+a {
+	margin-left: 30px;
 }
