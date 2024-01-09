@@ -8,6 +8,7 @@
 	width: 900px;
 	height: 400px;
 	margin: 15px;
+	margin-top: 120px;
 	margin-bottom: 140px;
 	padding: 0px;
 	background-image: url("pictures/shoe.png");
@@ -40,22 +41,58 @@
 	padding: 0px;
 	background-image: url("pictures/backpack.png");
 }
-.title {
+.titlePNG,
+.titleSVG,
+.titleBEZIER {
 	width: 900px;
-	margin-top: 60px;
 	margin-left: 25%;
 	font-size: 40px;
+}
+.titlePNG{
+	margin-top: 0px;
+	height: 112px;
+	position: relative;
+}
+.titleSVG{
+	margin-top: 479px;
+}
+.titleBEZIER{
+	margin-top: 996px;
 }
 a {
 	margin-top: 60px;
 	margin-left: 30px;
 	color: beige;
 	font-family: "abrakadabra";
+	text-decoration: none;
+	font-size: 25px;
+}
+a.pngshoe{
+	margin-top: 0px;
+	position: absolute;
+	bottom: 0px;
 }
 body {
 	background-image: url("pictures/snow.gif");
+	margin: 0 auto;
 }
 @font-face {
 	font-family: abrakadabra;
 	src: url("font/Futura_Std_Extra_Bold_Condensed.ttf");
+}
+
+div.sticky {
+	width: 99.8%;
+	position: sticky;
+	top: 0;
+	background-color: beige;
+	border: 2px solid beige;
+}
+td{
+	text-align: center;
+	font-family: "abrakadabra";
+}
+a.sticky{
+	margin-top: 0;
+	color: black;
 }
