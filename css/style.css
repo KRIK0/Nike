@@ -90,6 +90,16 @@ a {
 	transition: all 0.3s ease-in-out;
 }
 
+.col-sm-5 {
+	padding-left: 70px;
+}
+.col-sm-3 {
+	padding-left: 0px;
+}
+.col-sm-9 {
+	padding-left: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -755,7 +765,8 @@ a:hover {
 	float: left;
 	background-color: #272222;
 	height: auto;
-	padding-top: 30px;
+	margin-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 30px;
 }
 
